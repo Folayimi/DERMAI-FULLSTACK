@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import {Search} from 'heroicons-react'
 const Navbar = () =>{
     return(
         <>
@@ -14,9 +15,9 @@ const Navbar = () =>{
                     <li>About Us</li>
                     <li>Contact Us</li>
                     <li className='searchComponents'>
-                        <p>Search</p>
-                        {/* <Search color="black" width="20px"/> */}
-                        <input type="input"/>
+                        {/* <p>Search</p> */}
+                        <Search color="black" width="25px"/>
+                        <input type="input" placeholder='Find Components'/>
                     </li>
                     <li>Sign In</li>
                 </ul>
