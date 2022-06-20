@@ -13,7 +13,9 @@ const Navbar = () =>{
                     <li>Services</li>
                     <li>About Us</li>
                     <li>Contact Us</li>
-                    <li>
+                    <li className='searchComponents'>
+                        <p>Search</p>
+                        {/* <Search color="black" width="20px"/> */}
                         <input type="input"/>
                     </li>
                     <li>Sign In</li>
