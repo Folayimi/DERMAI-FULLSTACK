@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>   
-          <Route element={<HeroSection/>}/>       
+          <Route path="/" element={<HeroSection/>}/>       
         </Routes>
       </Router>
     </>    
