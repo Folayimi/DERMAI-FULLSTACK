@@ -4,6 +4,7 @@ import {
   Route, 
   Routes
 } from "react-router-dom";
+import HeroSection from './Components/HeroSection/HeroSection';
 import Navbar from './Components/Navbar/Navbar'
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <>
       <Router>
         <Navbar/>
-        <Routes>          
+        <Routes>   
+          <Route element={<HeroSection/>}/>       
         </Routes>
       </Router>
     </>    
