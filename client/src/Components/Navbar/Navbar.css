@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+   background: white;
+    font-size: 15px;
+    color:black;
+}
+.Navigation{
+    top:0;
+    position: fixed;
+    width:100%;
+    padding:0.5em 0.5em;    
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(0,0,0,0.7);
+    background:rgb(116, 4, 82,0.7);
+}
+.brand{
+    width:5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size:1.5rem;    
+}
+.brand > .span1{
+    color:white
+}
+.brand > .span2{
+    color:black;
+}
+.NavContent{
+    flex: 0 1 53em;
+    color:white;
+    font-weight: bolder;
+}
+.NavContent ul{    
+    width: 100%;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0.5em;    
+    list-style-type: none;    
+}
+.NavContent ul li{
+    margin:0.2em;    
+    cursor:pointer
+}
+.searchComponents{
+    padding:0.5em;
+    border-radius: 0.8em;
+    display:flex;
+    justify-content: space-around;    
+    background:white;
+}
+.searchComponents p{
+    color:black;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    width:20%
+}
+.searchComponents input{
+    padding-left:0.5em;
+    border: none;
+    width:80%;    
+}
+.searchComponents input:focus{
+    outline:none;
+}

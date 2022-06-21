@@ -1,0 +1,15 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.heroSection{    
+    width:100%;            
+}
+.heroSection > .image{    
+    height:40em;    
+}
+.heroSection > .image img{
+    width:100%;
+    height: 100%;
+}
