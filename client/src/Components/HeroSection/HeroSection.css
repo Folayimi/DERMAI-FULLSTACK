@@ -28,6 +28,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 1em;
+    flex-wrap: wrap;
 }
 .herobody > .section1{
     width:60%;

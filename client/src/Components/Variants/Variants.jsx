@@ -38,8 +38,8 @@ export const InfromLeft={
         opacity:1,
         x:0,
         transition:{
-            delay:3,
-            duration:3.5                                    
+            delay:1,
+            duration:2.5                                    
         }
     }
 }

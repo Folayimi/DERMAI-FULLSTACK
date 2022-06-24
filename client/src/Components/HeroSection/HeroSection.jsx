@@ -1,13 +1,25 @@
 import React from 'react'
 import './HeroSection.css'
 import {Search,ChevronLeft,ChevronRight} from 'heroicons-react'
+import {motion} from 'framer-motion'
+import { graduallyAppear, InfromLeft} from '../Variants/Variants'
 const HeroSection = () =>{
     return(
         <>
             <div className="heroSection">
                 <div className="intro">
-                    <div>You Plan</div>                    
-                    <div>We Execute</div>
+                    <motion.div 
+                        // variants={}
+                    >
+                        You Plan
+                    </motion.div>                    
+                    <motion.div
+                        variants={graduallyAppear}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        We Execute
+                    </motion.div>
                 </div>                
                 <div className="herobody">
                     <div className="section1">
@@ -32,13 +44,17 @@ const HeroSection = () =>{
                             </div>
                         </div> 
                     </div>
-                    <div className="section2">
+                    <motion.div className="section2"
+                        variants={InfromLeft}
+                        initial="hidden"
+                        animate="visible"
+                    >
                         <p>Explore Our GadGets</p>
                         <div className='searchComponents'>            
                             <Search color="black"/>
                             <input type="input" placeholder='Explore...'/>                
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </>
