@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import HeroSection from './Components/HeroSection/HeroSection';
 import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>   
           <Route path="/" element={<HeroSection/>}/>       
         </Routes>
+        <Footer/>
       </Router>
     </>    
   )
