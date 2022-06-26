@@ -6,14 +6,13 @@ const Navbar = () =>{
         <div className="Navigation">
             <div className="brand"></div>
             <div className="NavContent">
+                <div>About Us</div>
                 <div>Services</div>
                 <div>Products</div>
-                <div>About Us</div>
                 <div>Contact Us</div>                    
             </div>            
             <div className="getIn">
-                <div>Log In</div>
-                <div className="button">Sign Up</div>
+                <div className='button'>Apply As An Affiliate</div>
             </div>
         </div>
         </>

@@ -3,6 +3,7 @@ import './HeroSection.css'
 import {Search,ChevronLeft,ChevronRight} from 'heroicons-react'
 import {motion} from 'framer-motion'
 import { graduallyAppear, InfromLeft} from '../Variants/Variants'
+import { ProductsContainer } from '../Styles/Global.styled'
 const HeroSection = () =>{
     return(
         <>
@@ -11,17 +12,17 @@ const HeroSection = () =>{
                     <motion.div 
                         // variants={}
                     >
-                        You Plan
+                        Gad-Gets
                     </motion.div>                    
-                    <motion.div
+                    <motion.p
                         variants={graduallyAppear}
                         initial="hidden"
                         animate="visible"
                     >
-                        We Execute
-                    </motion.div>
+                        Get your Gadgets here!
+                    </motion.p>
                 </div>                
-                <div className="herobody">
+                {/* <div className="herobody">
                     <div className="section1">
                         <div className="carousel">
                             <div className="change">
@@ -55,7 +56,14 @@ const HeroSection = () =>{
                             <input type="input" placeholder='Explore...'/>                
                         </div>
                     </motion.div>
-                </div>
+                </div> */}
+
+                <ProductsContainer>
+                    <h2>Our Products</h2>
+
+                </ProductsContainer>
+
+                
             </div>
         </>
     )
